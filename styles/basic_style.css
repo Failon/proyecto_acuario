@@ -5,7 +5,13 @@
 body{
 	margin: 0px;
 }
-
+#search{
+	border-radius: 15px;
+	float: right;
+	margin-top: 20px;
+	margin-right: 2%;
+	padding-left: 1%;
+}
 .hamburger-menu
 {
 	display: inline-block;
@@ -125,7 +131,7 @@ footer{
 	#license {
 		margin-left: 73%;
 	}
-	
+
 	#sitemap {
 		padding-left: 2%;
 	}
