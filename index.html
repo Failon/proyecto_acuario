@@ -11,7 +11,7 @@
 	<script>
 	$(document).ready(function(){
 		$(".hamburger-menu").click(function(){
-			$(".mobile").toggle("fast");
+			$("nav").toggle("fast");
 		});
 		$("#condensed").click(function(){
 			$("#expanded").toggle("fast");
@@ -20,43 +20,14 @@
 	</script>
 </head>
 <body>
-	<header>
-		<a href="index.html"><img id="logo" src="images/logo2.gif" alt="logo_H2O"/></a>
-		<h1>Holding to Ocean</h1>
-		<div class="hamburger-menu"></div>
-	</header>
-	<nav class="mobile">
-		<ul>
-			<li>Galeria Multimedia</li>
-			<li>Información del acuario</li>
-			<li>Educación</li>
-			<li>Eventos</li>
-			<li>Venta de Entradas</li>
-			<li>Sobre H2O</li>
-		</ul>
-	</nav>
-	<nav class="desktop">	
-	</nav>
-	<section>
-	<h2>Noticias</h2>
-		<article>
-			<h3>Próxima apertura 09/03/2015!</h3>
-			<p>Con motivo de nuestra inminente apertura el día 09 de marzo de 2015 les invitamos a adquirir un pase gratuíto <a href="contenido/ventas.html">aquí</a> con el que podrán disfrutar de nuestro espectáculo acuático con delfines. No dejen pasar esta oportunidad de la que no se arrepentirán</p>
-			<img src="images/article1.jpg"  alt="imagen_articulo"/>
-			<div class="social">
-				<div id="condensed">
-					<img class="social-icons" src="images/share6.svg" alt="social"/>
-				</div>
-				<div id="expanded">
-					<img class="social-icons" src="images/facebook.svg" alt="facebook-icon"/>
-					<img class="social-icons" src="images/twitter.svg" alt="twitter-icon"/>
-				</div>
-			</div>			
-		</article>
-	</section>
-	<footer>
-
-		<div id="sitemap">
+	<div class="contenedor">
+		<header>
+			<a href="index.html"><img id="logo" src="images/logo2.gif" alt="logo_H2O"/></a>
+			<h1>Holding to Ocean</h1>
+			<img src="images/menu.svg" alt="hamburger-menu" class="hamburger-menu">
+			<input id="cercador" type="text"/>
+		</header>
+		<nav>
 			<ul>
 				<li>Galeria Multimedia</li>
 				<li>Información del acuario</li>
@@ -65,10 +36,48 @@
 				<li>Venta de Entradas</li>
 				<li>Sobre H2O</li>
 			</ul>
-		</div>
-		<div id="license">
-			<img id="copyright" src="images/copyright.svg" alt="copyright"/> H2O, inc.
-		</div>
-	</footer>
+		</nav>
+		<section>
+		<h2>Noticias</h2>
+			<article>
+				<h3>Próxima apertura 09/03/2015!</h3>
+				<p>Con motivo de nuestra inminente apertura el día 09 de marzo de 2015 les invitamos a adquirir un pase gratuíto <a href="contenido/ventas.html">aquí</a> con el que podrán disfrutar de nuestro espectáculo acuático con delfines. No dejen pasar esta oportunidad de la que no se arrepentirán.</p>
+				<img src="images/article1.jpg"  alt="imagen_articulo"/>
+				<div class="social">
+					<img class="social-icons" src="images/facebook.svg" alt="facebook-icon"/>
+					<img class="social-icons" src="images/twitter.svg" alt="twitter-icon"/>
+					<img class="social-icons" src="images/pinterest.svg" alt="pinterest-icon"/>
+				</div>			
+			</article>
+			<article>
+				<h3>Benur, el gladiador acuático</h3>
+				<p>
+					Nos enorgullece presentaros a Benur. Este magnifico ejemplar de tiburón martillo es ya el compañero más veterano de <a href="index.html">H2O</a>. No te pierdas su historia y comenta lo que te ha parecido.
+				</p>
+				<img src="images/article2.jpg"  alt="imagen_articulo"/>
+				<div class="social">
+					<img class="social-icons" src="images/facebook.svg" alt="facebook-icon"/>
+					<img class="social-icons" src="images/twitter.svg" alt="twitter-icon"/>
+					<img class="social-icons" src="images/pinterest.svg" alt="pinterest-icon"/>
+				</div>					
+			</article>
+		</section>
+		<footer>
+			<div id="sitemap">
+				<ul>
+					<li>Galeria Multimedia</li>
+					<li>Información del acuario</li>
+					<li>Educación</li>
+					<li>Eventos</li>
+					<li>Venta de Entradas</li>
+					<li>Sobre H2O</li>
+				</ul>
+			</div>
+			<div id="license">
+				<img id="copyright" src="images/copyright.svg" alt="copyright"/> H2O, inc.
+			</div>
+		</footer>		
+	</div>
+
 </body>
 </html>
