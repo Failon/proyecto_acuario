@@ -6,6 +6,7 @@ body{
 	margin: 0px;
 }
 #search{
+	display: none;
 	border-radius: 15px;
 	float: right;
 	margin-top: 20px;
@@ -95,7 +96,9 @@ footer{
 	.contenedor {
 		margin-left: 7%;
 	}
-
+	#search{
+		display: block;
+	}
 	.hamburger-menu {
 		display: none;
 	}
