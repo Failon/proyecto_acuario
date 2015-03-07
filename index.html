@@ -17,6 +17,7 @@
 			$("#expanded").toggle("fast");
 		});
 		$(".menu>li").hover(function(){
+			$(this).children(".submenu").stop();
 			$(this).children(".submenu").toggle("fast");
 		});
 	});
