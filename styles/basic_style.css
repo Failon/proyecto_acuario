@@ -6,12 +6,23 @@ body{
 	margin: 0px;
 }
 #search{
+	background-image: url("../images/search.svg");
+	background-size: 10px 10px;
+	background-repeat: no-repeat;
+	background-position: 5px;
 	display: none;
 	border-radius: 15px;
 	float: right;
 	margin-top: 20px;
 	margin-right: 2%;
-	padding-left: 1%;
+	padding-left: 2%;
+	outline: none;
+	transition: all 0.30s ease-in-out;
+	border: 1px solid #DDDDDD;
+}
+#search:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
 }
 .hamburger-menu
 {
@@ -46,8 +57,14 @@ nav{
 nav li{
 	padding: 2%;
 	display: block;	
-	box-shadow: 0px 3px white;
+	border-bottom: 1px solid white;
 	font-family: Roboto Slab;
+}
+.submenu{
+	display: none;
+}
+.submenu > li:last-child{
+	border-bottom: 0px;
 }
 
 header{
@@ -94,7 +111,8 @@ footer{
 
 @media only screen and (min-width: 361px) {
 	.contenedor {
-		margin-left: 7%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	#search{
 		display: block;
@@ -105,18 +123,28 @@ footer{
 
 	nav {
 		display: block;
+		/*border-bottom: 1px solid white;*/
 	}
 
-	nav li{
+	.menu > li{
 		padding: 0px;
 		display: inline-block;
 		width: 16.3%;
 		text-align: center;
 		border-left: 1px solid white;
-		box-shadow: 0px 0px;
+		
 	}
 
-	nav li:first-child{
+	nav li {
+		border-bottom: 0px;
+	}
+
+	.submenu {
+		position: absolute;
+		background-color: #336E7B;
+	}
+
+	.menu > li:first-child{
 		border-left: 0px;
 		margin-bottom: 5px;
 		margin-top: 5px;

@@ -16,6 +16,9 @@
 		$("#condensed").click(function(){
 			$("#expanded").toggle("fast");
 		});
+		$(".menu>li").hover(function(){
+			$(this).children(".submenu").toggle("fast");
+		});
 	});
 	</script>
 </head>
@@ -28,13 +31,30 @@
 			<input id="search" type="text" placeholder="buscar..."/>
 		</header>
 		<nav>
-			<ul>
+			<ul class="menu">
 				<li>Galeria Multimedia</li>
-				<li>Información del acuario</li>
-				<li>Educación</li>
+				<li>Información del acuario
+					<ul class="submenu">
+						<li>Especies</li>
+						<li>Horarios</li>
+					</ul>
+				</li>
+				<li>Educación
+					<ul class="submenu">
+						<li>Infantil</li>
+						<li>Juvenil</li>
+						<li>Profesores</li>
+					</ul>
+				</li>
 				<li>Eventos</li>
 				<li>Venta de Entradas</li>
-				<li>Sobre H2O</li>
+				<li>Sobre H2O
+					<ul class="submenu">
+						<li>Historia</li>
+						<li>Contacto</li>
+						<li>Como llegar</li>
+					</ul>
+				</li>
 			</ul>
 		</nav>
 		<section>
