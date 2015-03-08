@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>H2O | Holding to Ocean</title>
+	<link rel="stylesheet" href="styles/basic_style.css">
+	<link rel="stylesheet" href="styles/style_contacto.css">
+
+	<link rel="icon" href="images/favicon.ico">
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script type="text/javascript" src="gmaps/gmaps.js"></script>
+	
+
+
+
+	<script>
+	var map;
+	$(document).ready(function(){
+		
+
+
+
+		$(".hamburger-menu").click(function(){
+			$("nav").toggle("fast");
+		});
+		$("#condensed").click(function(){
+			$("#expanded").toggle("fast");
+		});
+		$(".menu>li").hover(function(){
+			$(this).children(".submenu").stop();
+			$(this).children(".submenu").toggle("fast");
+		});
+
+		map = new GMaps({
+		  div: '#mapa',
+		  lat: 41.3014,
+		  lng: 2.001299,
+		  //mapTypeId:google.maps.MapTypeId.HYBRID
+		  //HYBRID, SATTELITE, ROADMAP, TERRAIN
+		});
+
+ 		map.addMarker({
+		  div: '#mapa',
+		  lat: 41.301065, 
+		  lng: 2.001140,
+		  title:"Holding to Ocean",
+		  icon: "images/icono_maps_2.png",
+		  
+		  infoWindow:{
+		  	content:"Holding to Ocean"
+		  }
+		});
+
+	});
+	</script>
+</head>
+<body>
+	<div class="contenedor">
+		<header>
+			<a href="index.html"><img id="logo" src="images/logo2.gif" alt="logo_H2O"/></a>
+			<h1>Holding to Ocean</h1>
+			<img src="images/menu.svg" alt="hamburger-menu" class="hamburger-menu">
+			<input id="search" type="text" placeholder="buscar..."/>
+		</header>
+		<nav>
+			<ul class="menu">
+				<li>Galeria Multimedia</li>
+				<li>Información del acuario
+					<ul class="submenu">
+						<li>Especies</li>
+						<li>Horarios</li>
+					</ul>
+				</li>
+				<li>Educación
+					<ul class="submenu">
+						<li>Infantil</li>
+						<li>Juvenil</li>
+						<li>Profesores</li>
+					</ul>
+				</li>
+				<li>Eventos</li>
+				<li>Venta de Entradas</li>
+				<li>Sobre H2O
+					<ul class="submenu">
+						<li>Historia</li>
+						<li>Contacto</li>
+						<li>Como llegar</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<section>
+		<h2>Contacto</h2>
+			<article>
+				<h3>Mapa del sitio</h3>
+				<div id="mapa" >
+					
+				</div>
+				
+				<div class="social">
+					<img class="social-icons" src="images/facebook.svg" alt="facebook-icon"/>
+					<img class="social-icons" src="images/twitter.svg" alt="twitter-icon"/>
+					<img class="social-icons" src="images/pinterest.svg" alt="pinterest-icon"/>
+				</div>			
+			</article>
+			<article>
+				<h3>Benur, el gladiador acuático</h3>
+				<h4>publicado el 28/02/2015</h4>
+				<p>
+					Nos enorgullece presentaros a Benur. Este magnifico ejemplar de tiburón martillo es ya el compañero más veterano de <a href="index.html">H2O</a>. No te pierdas su historia y comenta lo que te ha parecido.
+				</p>
+				<img src="images/article2.jpg"  alt="imagen_articulo"/>
+				<div class="social">
+					<img class="social-icons" src="images/facebook.svg" alt="facebook-icon"/>
+					<img class="social-icons" src="images/twitter.svg" alt="twitter-icon"/>
+					<img class="social-icons" src="images/pinterest.svg" alt="pinterest-icon"/>
+				</div>					
+			</article>
+		</section>
+		<footer>
+			<div id="sitemap">
+				<ul>
+					<li>Galeria Multimedia</li>
+					<li>Información del acuario</li>
+					<li>Educación</li>
+					<li>Eventos</li>
+					<li>Venta de Entradas</li>
+					<li>Sobre H2O</li>
+				</ul>
+			</div>
+			<div id="license">
+				<img id="copyright" src="images/copyright.svg" alt="copyright"/> H2O, inc.
+			</div>
+		</footer>		
+	</div>
+
+</body>
+</html>
