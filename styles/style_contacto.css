@@ -1,0 +1,17 @@
+#mapa{
+	width: 90%;
+height: 300px;
+margin-left: 5%;
+}
+
+.social{
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 0px;
+}
+.social-icons{
+	margin-top: 5px;
+	width: 30px;
+	height: 30px;
+	padding-right: 3%;
+}
