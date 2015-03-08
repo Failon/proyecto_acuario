@@ -81,11 +81,10 @@ section > h2{
 		border-right: 1px solid white;
 	}
 	.carrito{
-		margin-top: 30px;
+		margin-top: 25%;
 		vertical-align: top;
 	}
 	#confirm{
-		margin-top: 200px;
 		margin-left: 30%;
 
 	}
